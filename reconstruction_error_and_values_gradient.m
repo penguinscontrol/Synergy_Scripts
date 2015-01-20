@@ -33,8 +33,9 @@ for ii = 1:N
             % calculate the error at 3 values of the current point in the
             % synergy
             Fx = re_at_time(ranges, b, eps, t, ...
-                curr_rec_err, ...
-                curr_reconstruction,c_sca(:,ii), t_del(:,ii));
+                Err, ...
+                curr_reconstruction,...
+                c_sca(:,ii), t_del(:,ii));
             dFxdVal = gradient(Fx, spacing);
             dErrdVals(cnt) = dFxdVal(2);
             cnt = cnt + 1;
@@ -45,4 +46,3 @@ end
 dErrdVals = dErrdVals';
 
 end
-

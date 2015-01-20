@@ -15,14 +15,15 @@ err_s = 0;
 reconstructed = syn2act( synergies, c_sca, t_del);
 reconstructed = reconstructed{1};
 
+for b = 1:length(episode) % counts muscles
+    reconstructed{b} = match_to(reconstructed{b}, episode{b});
+    err_s = err_s + norm(episode{b}-reconstructed{b}).^2; % squared difference
+end
+
 if getting_reconstructions
     rec_out = reconstructed;
 else
     rec_out = 0;
 end
 
-for b = 1:length(episode) % counts muscles
-    reconstructed{b} = match_to(reconstructed{b}, episode{b});
-    err_s = err_s + norm(episode{b}-reconstructed{b}).^2; % squared difference
-end
 end
