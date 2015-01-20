@@ -5,7 +5,7 @@ function [Err, dErrdSca] = reconstruction_error_and_scale_gradient( varargin )
 % Rec is the reconstruction that gives you this error
 episode = varargin{1};
 synergies = varargin{2};
-% minFunc wants columns of parameter, my scripts have rows... correct here
+% minFunc wants columns of parameter, the scripts have rows... correct here
 c_sca = varargin{3};
 c_sca = c_sca';
 t_del = varargin{4};
@@ -21,6 +21,7 @@ for ii = 1:N % for each synergy
         [Fx(jj), ~] = reconstruction_error(episode,...
             synergies, coordinate, t_del);
     end
+    Fx = sqrt(Fx);
     gr = gradient(Fx, spacing);
     dErrdSca(ii) = gr(2);
 end

@@ -23,6 +23,6 @@ end
 
 for b = 1:length(episode) % counts muscles
     reconstructed{b} = match_to(reconstructed{b}, episode{b});
-    err_s = err_s + norm(episode{b}-reconstructed{b}); % two-norm of difference
+    err_s = err_s + norm(episode{b}-reconstructed{b}).^2; % squared difference
 end
 end
