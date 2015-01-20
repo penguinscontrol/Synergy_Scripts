@@ -22,7 +22,7 @@ for s = 1:N_eps
     curr_reconstruction{s} = this_reconstruction;
     curr_rec_err = curr_rec_err+this_rec_err;
 end
-Err = sqrt(curr_rec_err); % the total reconstruction error
+Err = sqrt(curr_rec_err); % the total reconstruction error at the current point
 
 cnt = 1;
 for ii = 1:N

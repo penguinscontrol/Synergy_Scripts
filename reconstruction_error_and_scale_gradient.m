@@ -25,6 +25,7 @@ for ii = 1:N % for each synergy
     gr = gradient(Fx, spacing);
     dErrdSca(ii) = gr(2);
 end
+
 dErrdSca = dErrdSca';
 Err = Fx(2);
 

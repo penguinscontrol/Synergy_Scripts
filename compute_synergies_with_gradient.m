@@ -77,19 +77,17 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
         options.maxIter = maxIter;
         options.numDiff = 0; % Compute the gradient inside minfunc
         options.Method = 'csd';
-        %options.Display = 'full';
-        %options.optTol = optTol;
         
          ftomin = @(coordinate) reconstruction_error_and_scale_gradient(...
              eps{s}, out, coordinate, t_del(s,:));
         coordinate = c_sca(s,:)';
-        %new_c_sca = minFunc(ftomin,coordinate,options);
+        new_c_sca = minFunc(ftomin,coordinate,options);
         
-        % ALTERNATIVE TO minFunc
-        options = optimoptions('fminunc');
-        options.DerivativeCheck = 'on';
-        options.GradObj = 'on';
-        new_c_sca = fminunc(ftomin,coordinate,options);
+%         % ALTERNATIVE TO minFunc
+%         options = optimoptions('fminunc');
+%         options.DerivativeCheck = 'on';
+%         options.GradObj = 'on';
+%         new_c_sca = fminunc(ftomin,coordinate,options);
         
         new_c_sca(new_c_sca < 0) = 0;        % clear the negative values
         c_sca(s,:) = new_c_sca';
@@ -101,22 +99,21 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
     options.display = 'none';
     options.maxFunEvals = maxFunEvals;
     options.maxIter = maxIter;
-    options.numDiff = 2;
+    options.numDiff = 0;
     options.Method = 'csd';
-    options.Display = 'full';
-    %options.optTol = optTol;
+    %options.Display = 'full';
         
     coordinate = flatten_synergies(out);
      ftomin = @(coordinate) reconstruction_error_and_values_gradient(...
          eps, coordinate, c_sca, t_del, T);
-    %[new_out, new_err] = minFunc(ftomin,coordinate,options);
+    [new_out, new_err] = minFunc(ftomin,coordinate,options);
     
         % ALTERNATIVE TO minFunc
-        options = optimoptions('fminunc');
-        options.DerivativeCheck = 'on';
-        options.GradObj = 'on';
-        options.FinDiffType = 'central';
-    [new_out, new_err] = fminunc(ftomin,coordinate,options);
+%         options = optimoptions('fminunc');
+%         options.DerivativeCheck = 'on';
+%         options.GradObj = 'on';
+%         options.FinDiffType = 'central';
+%     [new_out, new_err] = fminunc(ftomin,coordinate,options);
     new_out(new_out < 0) = 0;
     
     % update termination metrics
@@ -137,7 +134,7 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
         out = unflatten_synergies(new_out, M, N, T);
         err_tol = new_err;
         fprintf('Initial error is: %4.4f\n',err_tol);
-        err_tol = 0.1.*err_tol;
+        err_tol = 0.05.*err_tol;
         derr_tol = 0.001.*err_tol;
     end
     

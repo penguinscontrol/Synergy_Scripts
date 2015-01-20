@@ -6,7 +6,7 @@ ep_to_plot = 5;
 T = 30;
 to_proc = undersample_episodes(all, 60);
 [comp_syn, comp_c_sca, comp_t_del, save_gnorm]...
-    = compute_synergies(to_proc, N_comp_syn, T, 1000, 500);
+    = compute_synergies_with_gradient(to_proc, N_comp_syn, T, 1000, 500);
 
 
 %%
