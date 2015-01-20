@@ -55,8 +55,6 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
             % episode and the ii-th synergy time shifted by t.
             [phi, lags] = synergy_xcorr(this_ep, out{ii}, T_eps);
             % select the synergy and the delay that maximize cross
-            % correlation: subtract one to correct for counting, i.e. if
-            % the first lag is the maximum, that corresponds to t_del = 0
             maxlag = lags(phi == max(phi));
             t_del(s,ii) = maxlag(1);
             % scale and time shift the synergy, subtract it from the data
@@ -77,7 +75,7 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
         options.display = 'none';
         options.maxFunEvals = maxFunEvals;
         options.maxIter = maxIter;
-        options.numDiff = 2;
+        options.numDiff = 2; % Compute the gradient inside minfunc
         options.Method = 'csd';
         %options.Display = 'full';
         %options.optTol = optTol;
@@ -88,8 +86,7 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
             eps{s}, out, coordinate, t_del(s,:));
         coordinate = c_sca(s,:)';
         new_c_sca = minFunc(ftomin,coordinate,options);
-        new_c_sca(new_c_sca < 0) = 0;
-        % clear the negative values
+        new_c_sca(new_c_sca < 0) = 0;        % clear the negative values
         c_sca(s,:) = new_c_sca';
     end
     fprintf('Updated scales for iteration %d\n', niter);
@@ -115,7 +112,7 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
     % update termination metrics
     save_new_err(niter) = new_err;
     if niter > 1
-        if new_err < save_new_err(niter - 1)
+        if new_err < save_new_err(niter - 1) % Update if new synergies are better
             out = unflatten_synergies(new_out, M, N, T);
         else
             fprintf('WARNING: new error more than old. Skipping assignment.\n')

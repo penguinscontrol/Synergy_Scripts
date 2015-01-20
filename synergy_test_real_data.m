@@ -1,5 +1,5 @@
 clear;clc;close all;
-load('real_data_2.mat');
+load('real_data_3.mat');
 M = length(all{1});
 N_comp_syn = 3; % Look for N_comp_syn synergies
 ep_to_plot = 5;

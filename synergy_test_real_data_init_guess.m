@@ -7,12 +7,13 @@ ep_to_plot = 5;
 T = 30;
 to_proc = undersample_episodes(eps, 60);
 
-for ii = 2:N_comp_syn % create each synergy
+for ii = 1:N_comp_syn % create each synergy
     comp_syn{ii} = cell(M,1);
     for b = 1:M % fill out each muscle in the synergy
         comp_syn{ii}{b} = rand(1,T);
     end
 end
+
 [comp_syn, comp_c_sca, comp_t_del, save_gnorm]...
     = compute_synergies_init_guess(to_proc, N_comp_syn, T, 1000, 500, comp_syn);
 

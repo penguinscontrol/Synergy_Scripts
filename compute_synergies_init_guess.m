@@ -19,7 +19,6 @@ out = varargin{6};
 %% Preallocate synergies, delays and scaling coefficients with random
 % nummbers
 
-
 c_sca = 10.*rand(N_eps,N); % scaling coefficients for each synergy
 t_del = round(-T_eps./2+T_eps.*rand(N_eps,N)); % time delay coefficients for each synergy
 

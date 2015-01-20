@@ -1,9 +1,10 @@
 close all;
-EMG = Array.Trials(5).EMG(2);
+n = 79;
+EMG = Array.Trials(n).EMG(1);
 plot(EMG.rawtime, EMG.rawdata);
 hold on;
 
-g = Array.Trials(5).Gait;
+g = Array.Trials(n).Gait;
 % t = Trials.EMG(1).Cyclic_Data;
 % for a = 1:size(t,1)
 %     for b = 1:size(t,2)
