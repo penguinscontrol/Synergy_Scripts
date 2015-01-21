@@ -1,0 +1,35 @@
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('re_at_time', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\re_at_time.m', 19)" style="font-weight:bold">re_at_time</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\re_at_time.m',19,0)">line 19</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('reconstruction_error_and_values_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\reconstruction_error_and_values_gradient.m', 35)" style="font-weight:bold">reconstruction_error_and_values_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\reconstruction_error_and_values_gradient.m',35,0)">line 35</a>)
+            Fx = re_at_time(ranges, b, eps, t, ...
+
+In
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_with_gradient>@(coordinate)reconstruction_error_and_values_gradient(eps,coordinate,c_sca,t_del,T)', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_with_gradient.m', 107)" style="font-weight:bold">compute_synergies_with_gradient>@(coordinate)reconstruction_error_and_values_gradient(eps,coordinate,c_sca,t_del,T)</a>
+(<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_with_gradient.m',107,0)">line 107</a>)
+     ftomin = @(coordinate) reconstruction_error_and_values_gradient(...
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('WolfeLineSearch', 'C:\Users\Radu Darie\Google Drive\MATLAB\minFunc\minFunc\WolfeLineSearch.m', 34)" style="font-weight:bold">WolfeLineSearch</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Google Drive\MATLAB\minFunc\minFunc\WolfeLineSearch.m',34,0)">line 34</a>)
+    [f_new,g_new] = funObj(x+t*d,varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('minFunc', 'C:\Users\Radu Darie\Google Drive\MATLAB\minFunc\minFunc\minFunc.m', 1067)" style="font-weight:bold">minFunc</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Google Drive\MATLAB\minFunc\minFunc\minFunc.m',1067,0)">line 1067</a>)
+            [t,f,g,LSfunEvals] =
+            WolfeLineSearch(x,t,d,f,g,gtd,c1,c2,LS_interp,LS_multi,25,progTol,debug,doPlot,1,funObj,varargin{:});
+            
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_with_gradient.m', 109)" style="font-weight:bold">compute_synergies_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_with_gradient.m',109,0)">line 109</a>)
+    [new_out, new_err] = minFunc(ftomin,coordinate,options);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 25)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',25,0)">line 25</a>)
+[comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
+} 
+uiimport('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\20150121.mat')
+load('20150121.mat')
+clear
+close all
+clc
+diary(date)
+fprintf('Bla Bla')
+Bla Bladiary off

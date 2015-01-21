@@ -18,6 +18,7 @@ ep_to_plot = 1; % episode to be plotted
 
 [h2 real_ep] = plot_episode(ep_to_plot, c_sca, t_del, test_synergies, test_data);
 title('CG Episode');
+diary(date);
 %% Reconstruct synergies from test_data
 fprintf('Entering compute synergies\n');pause;
 N_comp_syn = 3; % Look for N_comp_syn synergies
@@ -46,3 +47,5 @@ for b = 1:M
     plot(rec_ep{b}, 'r:','LineWidth', 3);
     legend('CG', 'RECONSTRUCTED');
 end
+
+diary off
