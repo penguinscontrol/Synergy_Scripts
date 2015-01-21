@@ -1585,4 +1585,117 @@ Elapsed time is 0.394812 seconds.
 Updated delays for iteration 77
 Updated scales for iteration 77
 WARNING: new error more than old. Skipping assignment.
-Error
+Error is: 168.2601
+delta error is: 0.0002
+Finished iteration 77
+Elapsed time is 0.387185 seconds.
+Updated delays for iteration 78
+Updated scales for iteration 78
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2603
+delta error is: 0.0002
+Finished iteration 78
+Elapsed time is 0.395071 seconds.
+Updated delays for iteration 79
+Updated scales for iteration 79
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2605
+delta error is: 0.0002
+Finished iteration 79
+Elapsed time is 0.413871 seconds.
+Updated delays for iteration 80
+Updated scales for iteration 80
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2606
+delta error is: 0.0002
+Finished iteration 80
+Elapsed time is 0.395667 seconds.
+Updated delays for iteration 81
+Updated scales for iteration 81
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2608
+delta error is: 0.0001
+Finished iteration 81
+Elapsed time is 0.387902 seconds.
+Updated delays for iteration 82
+Updated scales for iteration 82
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2609
+delta error is: 0.0001
+Finished iteration 82
+Elapsed time is 0.392690 seconds.
+Updated delays for iteration 83
+Updated scales for iteration 83
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2610
+delta error is: 0.0001
+Finished iteration 83
+Elapsed time is 0.448505 seconds.
+Updated delays for iteration 84
+Updated scales for iteration 84
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2611
+delta error is: 0.0001
+Finished iteration 84
+Elapsed time is 0.383218 seconds.
+Updated delays for iteration 85
+Updated scales for iteration 85
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2613
+delta error is: 0.0001
+Finished iteration 85
+Elapsed time is 0.393282 seconds.
+Updated delays for iteration 86
+Updated scales for iteration 86
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2614
+delta error is: 0.0001
+Finished iteration 86
+Elapsed time is 0.388510 seconds.
+Updated delays for iteration 87
+Updated scales for iteration 87
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2615
+delta error is: 0.0001
+Finished iteration 87
+Elapsed time is 0.391157 seconds.
+Updated delays for iteration 88
+Updated scales for iteration 88
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2616
+delta error is: 0.0001
+Finished iteration 88
+Elapsed time is 0.385880 seconds.
+Updated delays for iteration 89
+Updated scales for iteration 89
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2617
+delta error is: 0.0001
+Finished iteration 89
+Elapsed time is 0.406549 seconds.
+Updated delays for iteration 90
+Updated scales for iteration 90
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2618
+delta error is: 0.0001
+Finished iteration 90
+Elapsed time is 0.401974 seconds.
+Updated delays for iteration 91
+Updated scales for iteration 91
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2619
+delta error is: 0.0001
+Finished iteration 91
+Elapsed time is 0.393464 seconds.
+Updated delays for iteration 92
+Updated scales for iteration 92
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2619
+delta error is: 0.0001
+Finished iteration 92
+Elapsed time is 0.395817 seconds.
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_matrix', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_matrix.m', 36)" style="font-weight:bold">synergy_test_data_matrix</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_matrix.m',36,0)">line 36</a>)
+
+} 
+if system_dependent('IsDebugMode')==1, dbquit; end
+close all
