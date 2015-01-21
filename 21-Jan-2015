@@ -817,3 +817,772 @@ Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback
 } 
 if system_dependent('IsDebugMode')==1, dbquit; end
 synergy_test_data_with_gradient
+Entering compute synergies
+T
+
+T =
+
+    20
+
+N
+
+N =
+
+     2
+
+M
+
+M =
+
+     3
+
+dbquit
+synergy_test_data_with_gradient
+Entering compute synergies
+<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',60,1)">60  </a>err_tol = inf;
+if system_dependent('IsDebugMode')==1, dbquit; end
+rand
+
+ans =
+
+    0.8606
+
+synergy_test_data_with_gradient
+Entering compute synergies
+if system_dependent('IsDebugMode')==1, dbcont; end
+Updated delays for iteration 1
+{Undefined function or variable 'W'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_matrix', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m', 98)" style="font-weight:bold">compute_synergies_matrix</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',98,0)">line 98</a>)
+            c_sca(s,ii) = c_sca(s,ii)...
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 25)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',25,0)">line 25</a>)
+[comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
+} 
+if system_dependent('IsDebugMode')==1, dbquit; end
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+if system_dependent('IsDebugMode')==1, dbquit; end
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_matrix', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m', 105)" style="font-weight:bold">compute_synergies_matrix</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,0)">line 105</a>)
+    W_mat = W_mat * M_all * (H_all') / (W * H * (H_all'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 25)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',25,0)">line 25</a>)
+[comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
+} 
+<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,1)">105 </a>    W_mat = W_mat * M_all * (H_all') / (W * H * (H_all'));
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+{Undefined function or variable 'W'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_matrix', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m', 105)" style="font-weight:bold">compute_synergies_matrix</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,0)">line 105</a>)
+    W_mat = W_mat * ( (M_all * (H_all') ) / (W * H * (H_all') ));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 25)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',25,0)">line 25</a>)
+[comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
+} 
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+{Undefined function or variable 'H'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_matrix', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m', 105)" style="font-weight:bold">compute_synergies_matrix</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,0)">line 105</a>)
+    W_mat = W_mat * ( (M_all * (H_all') ) / (W_mat * H * (H_all') ));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 25)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',25,0)">line 25</a>)
+[comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
+} 
+<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,1)">105 </a>    W_mat = W_mat * ( (M_all * (H_all') ) / (W_mat * H * (H_all') ));
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Inner matrix dimensions must agree.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('compute_synergies_matrix', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m', 105)" style="font-weight:bold">compute_synergies_matrix</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,0)">line 105</a>)
+    W_mat = W_mat * ( (M_all * (H_all') ) / (W_mat * H_all * (H_all') ));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 25)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',25,0)">line 25</a>)
+[comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
+} 
+<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\compute_synergies_matrix.m',105,1)">105 </a>    W_mat = W_mat * ( (M_all * (H_all') ) / (W_mat * H_all * (H_all') ));
+den1 = (M_all * (H_all') );
+den2 = (W_mat * H_all * (H_all') );
+mult1 = de1 / den2;
+{Undefined function or variable 'de1'.
+} 
+mult1 = den1 / den2;
+size(mult1)
+
+ans =
+
+     3     3
+
+size(W_mat)
+
+ans =
+
+     3    40
+
+N
+
+N =
+
+     2
+
+T
+
+T =
+
+    20
+
+size(den1)
+
+ans =
+
+     3    40
+
+size(den2)
+
+ans =
+
+     3    40
+
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+open compute_synergies_with_gradient
+clear
+clc
+ose all
+{Undefined function 'ose' for input arguments of type 'char'.
+} 
+
+close all
+synergy_test_data_with_gradient
+Entering compute synergies
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('synergy_test_data_with_gradient', 'C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m', 23)" style="font-weight:bold">synergy_test_data_with_gradient</a> (<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',23,0)">line 23</a>)
+
+} 
+<a href="matlab: opentoline('C:\Users\Radu Darie\Documents\GitHub\Synergy_Scripts\synergy_test_data_with_gradient.m',23,1)">23  </a>fprintf('Entering compute synergies\n');pause;
+if system_dependent('IsDebugMode')==1, dbquit; end
+clear
+clc
+close all
+synergy_test_data_with_gradient
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+Initial error is: 190.6848
+Finished iteration 1
+Elapsed time is 0.413434 seconds.
+Updated delays for iteration 2
+Updated scales for iteration 2
+Error is: 169.4307
+delta error is: -21.2540
+Finished iteration 2
+Elapsed time is 0.400137 seconds.
+Updated delays for iteration 3
+Updated scales for iteration 3
+WARNING: new error more than old. Skipping assignment.
+Error is: 183.7663
+delta error is: 14.3356
+Finished iteration 3
+Elapsed time is 0.389086 seconds.
+Updated delays for iteration 4
+Updated scales for iteration 4
+WARNING: new error more than old. Skipping assignment.
+Error is: 184.1736
+delta error is: 0.4073
+Finished iteration 4
+Elapsed time is 0.409116 seconds.
+Updated delays for iteration 5
+Updated scales for iteration 5
+WARNING: new error more than old. Skipping assignment.
+Error is: 184.1953
+delta error is: 0.0217
+Finished iteration 5
+Elapsed time is 0.396478 seconds.
+Updated delays for iteration 6
+Updated scales for iteration 6
+Error is: 184.1408
+delta error is: -0.0545
+Finished iteration 6
+Elapsed time is 0.396139 seconds.
+Updated delays for iteration 7
+Updated scales for iteration 7
+Error is: 158.4221
+delta error is: -25.7187
+Finished iteration 7
+Elapsed time is 0.395675 seconds.
+Updated delays for iteration 8
+Updated scales for iteration 8
+Error is: 158.0007
+delta error is: -0.4214
+Finished iteration 8
+Elapsed time is 0.408010 seconds.
+Updated delays for iteration 9
+Updated scales for iteration 9
+WARNING: new error more than old. Skipping assignment.
+Error is: 192.5827
+delta error is: 34.5820
+Finished iteration 9
+Elapsed time is 0.398376 seconds.
+Updated delays for iteration 10
+Updated scales for iteration 10
+WARNING: new error more than old. Skipping assignment.
+Error is: 192.6092
+delta error is: 0.0265
+Finished iteration 10
+Elapsed time is 0.400450 seconds.
+Updated delays for iteration 11
+Updated scales for iteration 11
+Error is: 192.6016
+delta error is: -0.0075
+Finished iteration 11
+Elapsed time is 0.388726 seconds.
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+Initial error is: 171.5121
+Finished iteration 1
+Elapsed time is 0.405895 seconds.
+Updated delays for iteration 2
+Updated scales for iteration 2
+Error is: 163.8959
+delta error is: -7.6162
+Finished iteration 2
+Elapsed time is 0.393592 seconds.
+Updated delays for iteration 3
+Updated scales for iteration 3
+Error is: 163.0992
+delta error is: -0.7967
+Finished iteration 3
+Elapsed time is 0.418080 seconds.
+Updated delays for iteration 4
+Updated scales for iteration 4
+Error is: 158.2567
+delta error is: -4.8424
+Finished iteration 4
+Elapsed time is 0.392964 seconds.
+Updated delays for iteration 5
+Updated scales for iteration 5
+WARNING: new error more than old. Skipping assignment.
+Error is: 161.8617
+delta error is: 3.6050
+Finished iteration 5
+Elapsed time is 0.399253 seconds.
+Updated delays for iteration 6
+Updated scales for iteration 6
+WARNING: new error more than old. Skipping assignment.
+Error is: 164.4666
+delta error is: 2.6049
+Finished iteration 6
+Elapsed time is 0.449371 seconds.
+Updated delays for iteration 7
+Updated scales for iteration 7
+WARNING: new error more than old. Skipping assignment.
+Error is: 165.0574
+delta error is: 0.5908
+Finished iteration 7
+Elapsed time is 0.402602 seconds.
+Updated delays for iteration 8
+Updated scales for iteration 8
+WARNING: new error more than old. Skipping assignment.
+Error is: 165.5578
+delta error is: 0.5004
+Finished iteration 8
+Elapsed time is 0.407584 seconds.
+Updated delays for iteration 9
+Updated scales for iteration 9
+WARNING: new error more than old. Skipping assignment.
+Error is: 165.9804
+delta error is: 0.4226
+Finished iteration 9
+Elapsed time is 0.389656 seconds.
+Updated delays for iteration 10
+Updated scales for iteration 10
+WARNING: new error more than old. Skipping assignment.
+Error is: 166.3353
+delta error is: 0.3549
+Finished iteration 10
+Elapsed time is 0.390143 seconds.
+Updated delays for iteration 11
+Updated scales for iteration 11
+WARNING: new error more than old. Skipping assignment.
+Error is: 166.6324
+delta error is: 0.2972
+Finished iteration 11
+Elapsed time is 0.395744 seconds.
+Updated delays for iteration 12
+Updated scales for iteration 12
+WARNING: new error more than old. Skipping assignment.
+Error is: 166.8808
+delta error is: 0.2484
+Finished iteration 12
+Elapsed time is 0.402990 seconds.
+Updated delays for iteration 13
+Updated scales for iteration 13
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.1036
+delta error is: 0.2228
+Finished iteration 13
+Elapsed time is 0.412403 seconds.
+Updated delays for iteration 14
+Updated scales for iteration 14
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.2780
+delta error is: 0.1744
+Finished iteration 14
+Elapsed time is 0.382646 seconds.
+Updated delays for iteration 15
+Updated scales for iteration 15
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.4224
+delta error is: 0.1444
+Finished iteration 15
+Elapsed time is 0.404280 seconds.
+Updated delays for iteration 16
+Updated scales for iteration 16
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.5429
+delta error is: 0.1206
+Finished iteration 16
+Elapsed time is 0.400362 seconds.
+Updated delays for iteration 17
+Updated scales for iteration 17
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.6442
+delta error is: 0.1013
+Finished iteration 17
+Elapsed time is 0.389748 seconds.
+Updated delays for iteration 18
+Updated scales for iteration 18
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.7299
+delta error is: 0.0857
+Finished iteration 18
+Elapsed time is 0.423442 seconds.
+Updated delays for iteration 19
+Updated scales for iteration 19
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.8028
+delta error is: 0.0729
+Finished iteration 19
+Elapsed time is 0.392954 seconds.
+Updated delays for iteration 20
+Updated scales for iteration 20
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.8650
+delta error is: 0.0622
+Finished iteration 20
+Elapsed time is 0.398603 seconds.
+Updated delays for iteration 21
+Updated scales for iteration 21
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.9184
+delta error is: 0.0533
+Finished iteration 21
+Elapsed time is 0.391650 seconds.
+Updated delays for iteration 22
+Updated scales for iteration 22
+WARNING: new error more than old. Skipping assignment.
+Error is: 167.9641
+delta error is: 0.0457
+Finished iteration 22
+Elapsed time is 0.401540 seconds.
+Updated delays for iteration 23
+Updated scales for iteration 23
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.0034
+delta error is: 0.0393
+Finished iteration 23
+Elapsed time is 0.399767 seconds.
+Updated delays for iteration 24
+Updated scales for iteration 24
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.0371
+delta error is: 0.0337
+Finished iteration 24
+Elapsed time is 0.389436 seconds.
+Updated delays for iteration 25
+Updated scales for iteration 25
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.0661
+delta error is: 0.0290
+Finished iteration 25
+Elapsed time is 0.394957 seconds.
+Updated delays for iteration 26
+Updated scales for iteration 26
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.0909
+delta error is: 0.0249
+Finished iteration 26
+Elapsed time is 0.392224 seconds.
+Updated delays for iteration 27
+Updated scales for iteration 27
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1123
+delta error is: 0.0214
+Finished iteration 27
+Elapsed time is 0.400264 seconds.
+Updated delays for iteration 28
+Updated scales for iteration 28
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1307
+delta error is: 0.0184
+Finished iteration 28
+Elapsed time is 0.401804 seconds.
+Updated delays for iteration 29
+Updated scales for iteration 29
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1465
+delta error is: 0.0158
+Finished iteration 29
+Elapsed time is 0.387711 seconds.
+Updated delays for iteration 30
+Updated scales for iteration 30
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1601
+delta error is: 0.0136
+Finished iteration 30
+Elapsed time is 0.402333 seconds.
+Updated delays for iteration 31
+Updated scales for iteration 31
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1719
+delta error is: 0.0118
+Finished iteration 31
+Elapsed time is 0.391426 seconds.
+Updated delays for iteration 32
+Updated scales for iteration 32
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1820
+delta error is: 0.0102
+Finished iteration 32
+Elapsed time is 0.395665 seconds.
+Updated delays for iteration 33
+Updated scales for iteration 33
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1908
+delta error is: 0.0088
+Finished iteration 33
+Elapsed time is 0.400686 seconds.
+Updated delays for iteration 34
+Updated scales for iteration 34
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.1985
+delta error is: 0.0077
+Finished iteration 34
+Elapsed time is 0.389508 seconds.
+Updated delays for iteration 35
+Updated scales for iteration 35
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2052
+delta error is: 0.0067
+Finished iteration 35
+Elapsed time is 0.393268 seconds.
+Updated delays for iteration 36
+Updated scales for iteration 36
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2110
+delta error is: 0.0058
+Finished iteration 36
+Elapsed time is 0.414669 seconds.
+Updated delays for iteration 37
+Updated scales for iteration 37
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2161
+delta error is: 0.0051
+Finished iteration 37
+Elapsed time is 0.396416 seconds.
+Updated delays for iteration 38
+Updated scales for iteration 38
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2206
+delta error is: 0.0045
+Finished iteration 38
+Elapsed time is 0.410648 seconds.
+Updated delays for iteration 39
+Updated scales for iteration 39
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2245
+delta error is: 0.0039
+Finished iteration 39
+Elapsed time is 0.392992 seconds.
+Updated delays for iteration 40
+Updated scales for iteration 40
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2280
+delta error is: 0.0035
+Finished iteration 40
+Elapsed time is 0.394264 seconds.
+Updated delays for iteration 41
+Updated scales for iteration 41
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2311
+delta error is: 0.0031
+Finished iteration 41
+Elapsed time is 0.401884 seconds.
+Updated delays for iteration 42
+Updated scales for iteration 42
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2338
+delta error is: 0.0027
+Finished iteration 42
+Elapsed time is 0.392932 seconds.
+Updated delays for iteration 43
+Updated scales for iteration 43
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2363
+delta error is: 0.0024
+Finished iteration 43
+Elapsed time is 0.404547 seconds.
+Updated delays for iteration 44
+Updated scales for iteration 44
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2384
+delta error is: 0.0022
+Finished iteration 44
+Elapsed time is 0.397696 seconds.
+Updated delays for iteration 45
+Updated scales for iteration 45
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2404
+delta error is: 0.0020
+Finished iteration 45
+Elapsed time is 0.391983 seconds.
+Updated delays for iteration 46
+Updated scales for iteration 46
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2421
+delta error is: 0.0018
+Finished iteration 46
+Elapsed time is 0.399228 seconds.
+Updated delays for iteration 47
+Updated scales for iteration 47
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2437
+delta error is: 0.0016
+Finished iteration 47
+Elapsed time is 0.406277 seconds.
+Updated delays for iteration 48
+Updated scales for iteration 48
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2451
+delta error is: 0.0014
+Finished iteration 48
+Elapsed time is 0.420522 seconds.
+Updated delays for iteration 49
+Updated scales for iteration 49
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2464
+delta error is: 0.0013
+Finished iteration 49
+Elapsed time is 0.400404 seconds.
+Updated delays for iteration 50
+Updated scales for iteration 50
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2476
+delta error is: 0.0012
+Finished iteration 50
+Elapsed time is 0.391691 seconds.
+Updated delays for iteration 51
+Updated scales for iteration 51
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2487
+delta error is: 0.0011
+Finished iteration 51
+Elapsed time is 0.397298 seconds.
+Updated delays for iteration 52
+Updated scales for iteration 52
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2497
+delta error is: 0.0010
+Finished iteration 52
+Elapsed time is 0.410938 seconds.
+Updated delays for iteration 53
+Updated scales for iteration 53
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2506
+delta error is: 0.0009
+Finished iteration 53
+Elapsed time is 0.405978 seconds.
+Updated delays for iteration 54
+Updated scales for iteration 54
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2514
+delta error is: 0.0008
+Finished iteration 54
+Elapsed time is 0.398056 seconds.
+Updated delays for iteration 55
+Updated scales for iteration 55
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2521
+delta error is: 0.0008
+Finished iteration 55
+Elapsed time is 0.392232 seconds.
+Updated delays for iteration 56
+Updated scales for iteration 56
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2528
+delta error is: 0.0007
+Finished iteration 56
+Elapsed time is 0.390417 seconds.
+Updated delays for iteration 57
+Updated scales for iteration 57
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2535
+delta error is: 0.0006
+Finished iteration 57
+Elapsed time is 0.390005 seconds.
+Updated delays for iteration 58
+Updated scales for iteration 58
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2540
+delta error is: 0.0006
+Finished iteration 58
+Elapsed time is 0.406170 seconds.
+Updated delays for iteration 59
+Updated scales for iteration 59
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2546
+delta error is: 0.0005
+Finished iteration 59
+Elapsed time is 0.397387 seconds.
+Updated delays for iteration 60
+Updated scales for iteration 60
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2551
+delta error is: 0.0005
+Finished iteration 60
+Elapsed time is 0.402184 seconds.
+Updated delays for iteration 61
+Updated scales for iteration 61
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2556
+delta error is: 0.0005
+Finished iteration 61
+Elapsed time is 0.393644 seconds.
+Updated delays for iteration 62
+Updated scales for iteration 62
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2560
+delta error is: 0.0004
+Finished iteration 62
+Elapsed time is 0.383023 seconds.
+Updated delays for iteration 63
+Updated scales for iteration 63
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2564
+delta error is: 0.0004
+Finished iteration 63
+Elapsed time is 0.393756 seconds.
+Updated delays for iteration 64
+Updated scales for iteration 64
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2568
+delta error is: 0.0004
+Finished iteration 64
+Elapsed time is 0.398101 seconds.
+Updated delays for iteration 65
+Updated scales for iteration 65
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2572
+delta error is: 0.0004
+Finished iteration 65
+Elapsed time is 0.398257 seconds.
+Updated delays for iteration 66
+Updated scales for iteration 66
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2575
+delta error is: 0.0003
+Finished iteration 66
+Elapsed time is 0.397959 seconds.
+Updated delays for iteration 67
+Updated scales for iteration 67
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2578
+delta error is: 0.0003
+Finished iteration 67
+Elapsed time is 0.394911 seconds.
+Updated delays for iteration 68
+Updated scales for iteration 68
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2581
+delta error is: 0.0003
+Finished iteration 68
+Elapsed time is 0.420039 seconds.
+Updated delays for iteration 69
+Updated scales for iteration 69
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2584
+delta error is: 0.0003
+Finished iteration 69
+Elapsed time is 0.391462 seconds.
+Updated delays for iteration 70
+Updated scales for iteration 70
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2587
+delta error is: 0.0003
+Finished iteration 70
+Elapsed time is 0.428600 seconds.
+Updated delays for iteration 71
+Updated scales for iteration 71
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2589
+delta error is: 0.0002
+Finished iteration 71
+Elapsed time is 0.393919 seconds.
+Updated delays for iteration 72
+Updated scales for iteration 72
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2591
+delta error is: 0.0002
+Finished iteration 72
+Elapsed time is 0.391470 seconds.
+Updated delays for iteration 73
+Updated scales for iteration 73
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2594
+delta error is: 0.0002
+Finished iteration 73
+Elapsed time is 0.408245 seconds.
+Updated delays for iteration 74
+Updated scales for iteration 74
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2596
+delta error is: 0.0002
+Finished iteration 74
+Elapsed time is 0.387136 seconds.
+Updated delays for iteration 75
+Updated scales for iteration 75
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2598
+delta error is: 0.0002
+Finished iteration 75
+Elapsed time is 0.400041 seconds.
+Updated delays for iteration 76
+Updated scales for iteration 76
+WARNING: new error more than old. Skipping assignment.
+Error is: 168.2600
+delta error is: 0.0002
+Finished iteration 76
+Elapsed time is 0.394812 seconds.
+Updated delays for iteration 77
+Updated scales for iteration 77
+WARNING: new error more than old. Skipping assignment.
+Error

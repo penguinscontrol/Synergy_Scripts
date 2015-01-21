@@ -1,4 +1,4 @@
-function [out, comp_c_sca, comp_t_del, save_new_err] = compute_synergies( varargin )
+function [out, comp_c_sca, comp_t_del, save_new_err] = compute_synergies_matrix( varargin )
 %compute_synergies.m given a set of observed episodes eps = varargin{1},
 %computes the N = varargin{2} time varying synergies of length
 %T = varargin{3} that best explain the observations based on an
@@ -26,17 +26,21 @@ for ii = 1:N % create each synergy
     end
 end
 
-c_sca = 10.*rand(N_eps,N); % scaling coefficients for each synergy
+c_sca = rand(N_eps,N); % scaling coefficients for each synergy
 t_del = round(-T_eps./2+T_eps.*rand(N_eps,N)); % time delay coefficients for each synergy
 
 %% Cast as matrices for the algorithm described in D'Avella 2003
 
-M_eps = cell(N_eps,1); % Episodes
+M_s = cell(N_eps,1); % Episodes
+M_all = [];
+ep_lengths = zeros(N_eps,1);
 for s = 1:N_eps
-    M_eps{s} = zeros(M,length(eps{s}{1}));
+    ep_lengths(s) = length(eps{s}{1});
+    M_s{s} = zeros(M,ep_lengths(s));
     for b = 1:M
-        M_eps{s}(b,:) = eps{s}{b};
+        M_s{s}(b,:) = eps{s}{b};
     end
+    M_all = [M_all M_s{s}];
 end
 
 W_mat = zeros(M, N*T); % Synergies
@@ -45,8 +49,6 @@ for ii = 1:N
         W_mat(b,(ii-1)*T+1:(ii*T)) = out{ii}{b};
     end
 end
-
-
 %% Gradient descent algorithm
 
 % termination tolerance
@@ -71,7 +73,7 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
             % for each synergy
             % compute the sum of the scalar products between the s-th data
             % episode and the ii-th synergy time shifted by t.
-            [phi, lags] = synergy_xcorr(this_ep, out{ii}, T_eps);
+            [phi, lags] = synergy_xcorr(this_ep, out{ii}, ep_lengths(s));
             % select the synergy and the delay that maximize cross
             maxlag = lags(phi == max(phi));
             t_del(s,ii) = maxlag(1);
@@ -86,59 +88,43 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
     end
     fprintf('Updated delays for iteration %d\n', niter);
     
+    H_all = [];
     for s = 1:N_eps
-        % Max 25 gradient descents per episode for scaling coeffs
-        
-        options = [];
-        options.display = 'none';
-        options.maxFunEvals = maxFunEvals;
-        options.maxIter = maxIter;
-        options.numDiff = 0; % Compute the gradient inside minfunc
-        options.Method = 'csd';
-        
-         ftomin = @(coordinate) reconstruction_error_and_scale_gradient(...
-             eps{s}, out, coordinate, t_del(s,:));
-        coordinate = c_sca(s,:)';
-        new_c_sca = minFunc(ftomin,coordinate,options);
-        
-%         % ALTERNATIVE TO minFunc
-%         options = optimoptions('fminunc');
-%         options.DerivativeCheck = 'on';
-%         options.GradObj = 'on';
-%         new_c_sca = fminunc(ftomin,coordinate,options);
-        
-        new_c_sca(new_c_sca < 0) = 0;        % clear the negative values
-        c_sca(s,:) = new_c_sca';
-    end
+        for ii = 1:N
+            this_theta = theta_mat(ii, t_del(s,ii), N, T, ep_lengths(s));
+            this_h = h_mat(c_sca(s,:), t_del(s,:), N, T, ep_lengths(s));
+            c_sca(s,ii) = c_sca(s,ii)...
+                *trace(M_s{s}'*W_mat*this_theta)...
+                /trace(this_h'*(W_mat')*W_mat*this_theta);
+        end
+        H_all = [H_all this_h];
+    end % end cycle episodes
+    
     fprintf('Updated scales for iteration %d\n', niter);
     %% update the synergy elements by gradient descent, one value at a time
+    new_W_mat = W_mat * ( (M_all * (H_all') ) \ (W_mat * H_all * (H_all') ));
     
-    options = [];
-    options.display = 'none';
-    options.maxFunEvals = maxFunEvals;
-    options.maxIter = maxIter;
-    options.numDiff = 0;
-    options.Method = 'csd';
-    %options.Display = 'full';
-        
-    coordinate = flatten_synergies(out);
-     ftomin = @(coordinate) reconstruction_error_and_values_gradient(...
-         eps, coordinate, c_sca, t_del, T);
-    [new_out, new_err] = minFunc(ftomin,coordinate,options);
+    new_out = cell(N,1);
+    for ii = 1:N
+        new_out{ii} = cell(M,1);
+        for b = 1:M
+            new_out{ii}{b} = new_W_mat(b,(ii-1)*T+1:(ii*T));
+        end
+    end
     
-        % ALTERNATIVE TO minFunc
-%         options = optimoptions('fminunc');
-%         options.DerivativeCheck = 'on';
-%         options.GradObj = 'on';
-%         options.FinDiffType = 'central';
-%     [new_out, new_err] = fminunc(ftomin,coordinate,options);
-    new_out(new_out < 0) = 0;
-    
+    curr_rec_err = 0;
+    for s = 1:N_eps
+    [this_rec_err, ~] = ...
+        reconstruction_error(eps{s}, new_out, c_sca(s,:), t_del(s,:));
+    curr_rec_err = curr_rec_err+this_rec_err;
+    end
+    new_err = sqrt(curr_rec_err); % the total reconstruction error at the current point
+
     % update termination metrics
     save_new_err(niter) = new_err;
     if niter > 1
         if new_err < save_new_err(niter - 1) % Update if new synergies are better
-            out = unflatten_synergies(new_out, M, N, T);
+            out = new_out;
         else
             fprintf('WARNING: new error more than old. Skipping assignment.\n')
         end
@@ -149,11 +135,11 @@ while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol)
         % First time around, you don't have an old error to compare to, nor
         % do you know what error tolerance to expect. This runs only once,
         % during the first iteration.
-        out = unflatten_synergies(new_out, M, N, T);
+        out = new_out;
         err_tol = new_err;
         fprintf('Initial error is: %4.4f\n',err_tol);
-        err_tol = 0.05.*err_tol;
-        derr_tol = 0.001.*err_tol;
+        err_tol = 0.005.*err_tol;
+        derr_tol = 0.0001.*err_tol;
     end
     
     fprintf('Finished iteration %d\n', niter);
