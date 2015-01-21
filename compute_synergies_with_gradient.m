@@ -37,12 +37,14 @@ err_tol = inf;
 derr_tol = 1e-4;
 % if error not changing by more than derr_tol, stop.
 % maximum number of allowed iterations
-maxiterations = 500;
+maxiterations = 600;
+miniterations = 250;
 save_new_err = zeros(1, maxiterations);
 
 % initialize gradient norm, optimization vector, iteration counter, perturbation
 niter = 1; new_err = inf; derr = inf;
-while (new_err>=err_tol && niter <= maxiterations && abs(derr) > derr_tol) 
+while (new_err>=err_tol && niter <= maxiterations && ...
+        abs(derr) > derr_tol || niter <= miniterations)
     % continue iterating until done
     tic
     for s = 1:N_eps
