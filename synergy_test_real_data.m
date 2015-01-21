@@ -1,5 +1,5 @@
 clear;clc;close all;
-load('real_data_3.mat');
+load('real_data_4.mat');
 M = length(all{1});
 N_comp_syn = 3; % Look for N_comp_syn synergies
 ep_to_plot = 5;
@@ -10,7 +10,7 @@ to_proc = undersample_episodes(all, 60);
 
 
 %%
-
+diary(date);
 h3 = plot_synergy(comp_syn);
 title('RECONSTRUCTED Synergies');
 
@@ -33,3 +33,4 @@ for b = 1:M
     plot(rec_ep{b}, 'r:','LineWidth', 3);
     legend('CG', 'RECONSTRUCTED');
 end
+diary off;
