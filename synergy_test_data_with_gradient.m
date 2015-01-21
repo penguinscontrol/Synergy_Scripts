@@ -23,7 +23,7 @@ diary(date);
 fprintf('Entering compute synergies\n');pause;
 N_comp_syn = 3; % Look for N_comp_syn synergies
 [comp_syn, comp_c_sca, comp_t_del, save_gnorm] =...
-    compute_synergies_with_gradient(test_data, N, T, 1000, 500);
+    compute_synergies_matrix(test_data, N, T, 1000, 500);
 
 h3 = plot_synergy(comp_syn);
 title('RECONSTRUCTED Synergies');
