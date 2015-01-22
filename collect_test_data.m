@@ -10,10 +10,10 @@ filenames = {'C:\Users\Radu\Google Drive\CSP\Array Data\Array_Q19_20131126.mat';
 % Files to get data from
 
 alldata = {[] []};
-for a = 1:length(filenames)
-    for b = 1:length(types)
-        data = getdata(filenames{a},types{b});
-        labels = repmat(types(b), [length(data), 1]);
+for a = 1:length(types)
+    for b = 1:length(filenames)
+        data = getdata(filenames{b},types{a});
+        labels = repmat(types(a), [length(data), 1]);
         data_and_labels = [data labels];
         alldata = [alldata; data_and_labels];
     end

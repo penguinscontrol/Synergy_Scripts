@@ -1,0 +1,698 @@
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+Initial error is: 0.4685
+Finished iteration 1
+Elapsed time is 0.284981 seconds.
+Updated delays for iteration 2
+Updated scales for iteration 2
+Error is: 0.4055
+delta error is: -0.1722
+Finished iteration 2
+Elapsed time is 0.288806 seconds.
+Updated delays for iteration 3
+Updated scales for iteration 3
+Error is: 0.3610
+delta error is: -0.0629
+Finished iteration 3
+Elapsed time is 0.285218 seconds.
+Updated delays for iteration 4
+Updated scales for iteration 4
+Error is: 0.3206
+delta error is: -0.0446
+Finished iteration 4
+Elapsed time is 0.287334 seconds.
+Updated delays for iteration 5
+Updated scales for iteration 5
+Error is: 0.2651
+delta error is: -0.0403
+Finished iteration 5
+Elapsed time is 0.282707 seconds.
+Updated delays for iteration 6
+Updated scales for iteration 6
+Error is: 0.2077
+delta error is: -0.0556
+Finished iteration 6
+Elapsed time is 0.288065 seconds.
+Updated delays for iteration 7
+Updated scales for iteration 7
+Error is: 0.1511
+delta error is: -0.0574
+Finished iteration 7
+Elapsed time is 0.285302 seconds.
+Updated delays for iteration 8
+Updated scales for iteration 8
+Error is: 0.1136
+delta error is: -0.0566
+Finished iteration 8
+Elapsed time is 0.289197 seconds.
+Updated delays for iteration 9
+Updated scales for iteration 9
+Error is: 0.0896
+delta error is: -0.0375
+Finished iteration 9
+Elapsed time is 0.283754 seconds.
+Updated delays for iteration 10
+Updated scales for iteration 10
+Error is: 0.0699
+delta error is: -0.0241
+Finished iteration 10
+Elapsed time is 0.286807 seconds.
+Updated delays for iteration 11
+Updated scales for iteration 11
+Error is: 0.0608
+delta error is: -0.0197
+Finished iteration 11
+Elapsed time is 0.284754 seconds.
+Updated delays for iteration 12
+Updated scales for iteration 12
+Error is: 0.0552
+delta error is: -0.0090
+Finished iteration 12
+Elapsed time is 0.289178 seconds.
+Updated delays for iteration 13
+Updated scales for iteration 13
+Error is: 0.0507
+delta error is: -0.0056
+Finished iteration 13
+Elapsed time is 0.285673 seconds.
+Updated delays for iteration 14
+Updated scales for iteration 14
+Error is: 0.0482
+delta error is: -0.0045
+Finished iteration 14
+Elapsed time is 0.288944 seconds.
+Updated delays for iteration 15
+Updated scales for iteration 15
+Error is: 0.0464
+delta error is: -0.0025
+Finished iteration 15
+Elapsed time is 0.282998 seconds.
+Updated delays for iteration 16
+Updated scales for iteration 16
+Error is: 0.0451
+delta error is: -0.0018
+Finished iteration 16
+Elapsed time is 0.290152 seconds.
+Updated delays for iteration 17
+Updated scales for iteration 17
+Error is: 0.0441
+delta error is: -0.0013
+Finished iteration 17
+Elapsed time is 0.283106 seconds.
+Updated delays for iteration 18
+Updated scales for iteration 18
+Error is: 0.0434
+delta error is: -0.0010
+Finished iteration 18
+Elapsed time is 0.288592 seconds.
+Updated delays for iteration 19
+Updated scales for iteration 19
+Error is: 0.0428
+delta error is: -0.0007
+Finished iteration 19
+Elapsed time is 0.282513 seconds.
+Updated delays for iteration 20
+Updated scales for iteration 20
+Error is: 0.0395
+delta error is: -0.0006
+Finished iteration 20
+Elapsed time is 0.289546 seconds.
+Updated delays for iteration 21
+Updated scales for iteration 21
+Error is: 0.0368
+delta error is: -0.0034
+Finished iteration 21
+Elapsed time is 0.283683 seconds.
+Updated delays for iteration 22
+Updated scales for iteration 22
+Error is: 0.0339
+delta error is: -0.0027
+Finished iteration 22
+Elapsed time is 0.288967 seconds.
+Updated delays for iteration 23
+Updated scales for iteration 23
+Error is: 0.0318
+delta error is: -0.0029
+Finished iteration 23
+Elapsed time is 0.284750 seconds.
+Updated delays for iteration 24
+Updated scales for iteration 24
+Error is: 0.0306
+delta error is: -0.0021
+Finished iteration 24
+Elapsed time is 0.285265 seconds.
+Updated delays for iteration 25
+Updated scales for iteration 25
+Error is: 0.0300
+delta error is: -0.0012
+Finished iteration 25
+Elapsed time is 0.285333 seconds.
+Updated delays for iteration 26
+Updated scales for iteration 26
+Error is: 0.0297
+delta error is: -0.0006
+Finished iteration 26
+Elapsed time is 0.289093 seconds.
+Updated delays for iteration 27
+Updated scales for iteration 27
+Error is: 0.0294
+delta error is: -0.0003
+Finished iteration 27
+Elapsed time is 0.286313 seconds.
+Updated delays for iteration 28
+Updated scales for iteration 28
+Error is: 0.0293
+delta error is: -0.0002
+Finished iteration 28
+Elapsed time is 0.290431 seconds.
+Updated delays for iteration 29
+Updated scales for iteration 29
+Error is: 0.0291
+delta error is: -0.0002
+Finished iteration 29
+Elapsed time is 0.285540 seconds.
+Updated delays for iteration 30
+Updated scales for iteration 30
+Error is: 0.0290
+delta error is: -0.0002
+Finished iteration 30
+Elapsed time is 0.290176 seconds.
+Updated delays for iteration 31
+Updated scales for iteration 31
+Error is: 0.0288
+delta error is: -0.0001
+Finished iteration 31
+Elapsed time is 0.285060 seconds.
+Updated delays for iteration 32
+Updated scales for iteration 32
+Error is: 0.0287
+delta error is: -0.0001
+Finished iteration 32
+Elapsed time is 0.286266 seconds.
+Updated delays for iteration 33
+Updated scales for iteration 33
+Error is: 0.0286
+delta error is: -0.0001
+Finished iteration 33
+Elapsed time is 0.284026 seconds.
+Updated delays for iteration 34
+Updated scales for iteration 34
+Error is: 0.0285
+delta error is: -0.0001
+Finished iteration 34
+Elapsed time is 0.289669 seconds.
+Updated delays for iteration 35
+Updated scales for iteration 35
+Error is: 0.0285
+delta error is: -0.0001
+Finished iteration 35
+Elapsed time is 0.282717 seconds.
+Updated delays for iteration 36
+Updated scales for iteration 36
+Error is: 0.0284
+delta error is: -0.0001
+Finished iteration 36
+Elapsed time is 0.288877 seconds.
+Updated delays for iteration 37
+Updated scales for iteration 37
+Error is: 0.0283
+delta error is: -0.0001
+Finished iteration 37
+Elapsed time is 0.284457 seconds.
+Updated delays for iteration 38
+Updated scales for iteration 38
+Error is: 0.0283
+delta error is: -0.0001
+Finished iteration 38
+Elapsed time is 0.288493 seconds.
+Updated delays for iteration 39
+Updated scales for iteration 39
+Error is: 0.0282
+delta error is: -0.0001
+Finished iteration 39
+Elapsed time is 0.279930 seconds.
+Updated delays for iteration 40
+Updated scales for iteration 40
+Error is: 0.0282
+delta error is: -0.0001
+Finished iteration 40
+Elapsed time is 0.287925 seconds.
+Updated delays for iteration 41
+Updated scales for iteration 41
+Error is: 0.0281
+delta error is: -0.0000
+Finished iteration 41
+Elapsed time is 0.285902 seconds.
+Updated delays for iteration 42
+Updated scales for iteration 42
+Error is: 0.0281
+delta error is: -0.0000
+Finished iteration 42
+Elapsed time is 0.285797 seconds.
+Updated delays for iteration 43
+Updated scales for iteration 43
+Error is: 0.0280
+delta error is: -0.0000
+Finished iteration 43
+Elapsed time is 0.290130 seconds.
+Updated delays for iteration 44
+Updated scales for iteration 44
+Error is: 0.0280
+delta error is: -0.0000
+Finished iteration 44
+Elapsed time is 0.286936 seconds.
+Updated delays for iteration 45
+Updated scales for iteration 45
+Error is: 0.0280
+delta error is: -0.0000
+Finished iteration 45
+Elapsed time is 0.285870 seconds.
+Updated delays for iteration 46
+Updated scales for iteration 46
+Error is: 0.0279
+delta error is: -0.0000
+Finished iteration 46
+Elapsed time is 0.287942 seconds.
+Updated delays for iteration 47
+Updated scales for iteration 47
+Error is: 0.0279
+delta error is: -0.0000
+Finished iteration 47
+Elapsed time is 0.287568 seconds.
+Updated delays for iteration 48
+Updated scales for iteration 48
+Error is: 0.0279
+delta error is: -0.0000
+Finished iteration 48
+Elapsed time is 0.286666 seconds.
+Updated delays for iteration 49
+Updated scales for iteration 49
+Error is: 0.0279
+delta error is: -0.0000
+Finished iteration 49
+Elapsed time is 0.286235 seconds.
+Updated delays for iteration 50
+Updated scales for iteration 50
+Error is: 0.0278
+delta error is: -0.0000
+Finished iteration 50
+Elapsed time is 0.290141 seconds.
+Updated delays for iteration 51
+Updated scales for iteration 51
+Error is: 0.0278
+delta error is: -0.0000
+Finished iteration 51
+Elapsed time is 0.283650 seconds.
+Entering compute synergies
+Updated delays for iteration 1
+Updated scales for iteration 1
+Initial error is: 0.7708
+Finished iteration 1
+Elapsed time is 0.854990 seconds.
+Updated delays for iteration 2
+Updated scales for iteration 2
+Error is: 0.6467
+delta error is: -0.4112
+Finished iteration 2
+Elapsed time is 0.847114 seconds.
+Updated delays for iteration 3
+Updated scales for iteration 3
+Error is: 0.5918
+delta error is: -0.1241
+Finished iteration 3
+Elapsed time is 0.845968 seconds.
+Updated delays for iteration 4
+Updated scales for iteration 4
+Error is: 0.5680
+delta error is: -0.0549
+Finished iteration 4
+Elapsed time is 0.845826 seconds.
+Updated delays for iteration 5
+Updated scales for iteration 5
+Error is: 0.5485
+delta error is: -0.0238
+Finished iteration 5
+Elapsed time is 0.852836 seconds.
+Updated delays for iteration 6
+Updated scales for iteration 6
+Error is: 0.5317
+delta error is: -0.0195
+Finished iteration 6
+Elapsed time is 0.849584 seconds.
+Updated delays for iteration 7
+Updated scales for iteration 7
+Error is: 0.5140
+delta error is: -0.0168
+Finished iteration 7
+Elapsed time is 0.847344 seconds.
+Updated delays for iteration 8
+Updated scales for iteration 8
+Error is: 0.4913
+delta error is: -0.0177
+Finished iteration 8
+Elapsed time is 0.852993 seconds.
+Updated delays for iteration 9
+Updated scales for iteration 9
+Error is: 0.4736
+delta error is: -0.0227
+Finished iteration 9
+Elapsed time is 0.854633 seconds.
+Updated delays for iteration 10
+Updated scales for iteration 10
+Error is: 0.4589
+delta error is: -0.0176
+Finished iteration 10
+Elapsed time is 0.854696 seconds.
+Updated delays for iteration 11
+Updated scales for iteration 11
+Error is: 0.4473
+delta error is: -0.0147
+Finished iteration 11
+Elapsed time is 0.852680 seconds.
+Updated delays for iteration 12
+Updated scales for iteration 12
+Error is: 0.4402
+delta error is: -0.0117
+Finished iteration 12
+Elapsed time is 0.856851 seconds.
+Updated delays for iteration 13
+Updated scales for iteration 13
+Error is: 0.4338
+delta error is: -0.0071
+Finished iteration 13
+Elapsed time is 0.853777 seconds.
+Updated delays for iteration 14
+Updated scales for iteration 14
+Error is: 0.4291
+delta error is: -0.0064
+Finished iteration 14
+Elapsed time is 0.853511 seconds.
+Updated delays for iteration 15
+Updated scales for iteration 15
+Error is: 0.4189
+delta error is: -0.0047
+Finished iteration 15
+Elapsed time is 0.853164 seconds.
+Updated delays for iteration 16
+Updated scales for iteration 16
+Error is: 0.4117
+delta error is: -0.0102
+Finished iteration 16
+Elapsed time is 0.854488 seconds.
+Updated delays for iteration 17
+Updated scales for iteration 17
+Error is: 0.4007
+delta error is: -0.0072
+Finished iteration 17
+Elapsed time is 0.870948 seconds.
+Updated delays for iteration 18
+Updated scales for iteration 18
+Error is: 0.3905
+delta error is: -0.0110
+Finished iteration 18
+Elapsed time is 0.856648 seconds.
+Updated delays for iteration 19
+Updated scales for iteration 19
+Error is: 0.3830
+delta error is: -0.0102
+Finished iteration 19
+Elapsed time is 0.852763 seconds.
+Updated delays for iteration 20
+Updated scales for iteration 20
+Error is: 0.3772
+delta error is: -0.0075
+Finished iteration 20
+Elapsed time is 0.857508 seconds.
+Updated delays for iteration 21
+Updated scales for iteration 21
+Error is: 0.3652
+delta error is: -0.0058
+Finished iteration 21
+Elapsed time is 0.857277 seconds.
+Updated delays for iteration 22
+Updated scales for iteration 22
+Error is: 0.3585
+delta error is: -0.0120
+Finished iteration 22
+Elapsed time is 0.850140 seconds.
+Updated delays for iteration 23
+Updated scales for iteration 23
+Error is: 0.3548
+delta error is: -0.0067
+Finished iteration 23
+Elapsed time is 0.851966 seconds.
+Updated delays for iteration 24
+Updated scales for iteration 24
+Error is: 0.3454
+delta error is: -0.0037
+Finished iteration 24
+Elapsed time is 0.848755 seconds.
+Updated delays for iteration 25
+Updated scales for iteration 25
+Error is: 0.3411
+delta error is: -0.0094
+Finished iteration 25
+Elapsed time is 0.849875 seconds.
+Updated delays for iteration 26
+Updated scales for iteration 26
+Error is: 0.3389
+delta error is: -0.0043
+Finished iteration 26
+Elapsed time is 0.848875 seconds.
+Updated delays for iteration 27
+Updated scales for iteration 27
+Error is: 0.3385
+delta error is: -0.0022
+Finished iteration 27
+Elapsed time is 0.851843 seconds.
+Updated delays for iteration 28
+Updated scales for iteration 28
+Error is: 0.3373
+delta error is: -0.0004
+Finished iteration 28
+Elapsed time is 0.849956 seconds.
+Updated delays for iteration 29
+Updated scales for iteration 29
+Error is: 0.3363
+delta error is: -0.0012
+Finished iteration 29
+Elapsed time is 0.851294 seconds.
+Updated delays for iteration 30
+Updated scales for iteration 30
+              WARNING:       new error more than old.
+Error is: 0.3365
+delta error is: -0.0011
+Finished iteration 30
+Elapsed time is 0.845224 seconds.
+Updated delays for iteration 31
+Updated scales for iteration 31
+Error is: 0.3361
+delta error is: 0.0002
+Finished iteration 31
+Elapsed time is 0.847257 seconds.
+Updated delays for iteration 32
+Updated scales for iteration 32
+Error is: 0.3355
+delta error is: -0.0004
+Finished iteration 32
+Elapsed time is 0.845842 seconds.
+Updated delays for iteration 33
+Updated scales for iteration 33
+              WARNING:       new error more than old.
+Error is: 0.3411
+delta error is: -0.0005
+Finished iteration 33
+Elapsed time is 0.851614 seconds.
+Updated delays for iteration 34
+Updated scales for iteration 34
+Error is: 0.3403
+delta error is: 0.0056
+Finished iteration 34
+Elapsed time is 0.848780 seconds.
+Updated delays for iteration 35
+Updated scales for iteration 35
+Error is: 0.3398
+delta error is: -0.0008
+Finished iteration 35
+Elapsed time is 0.852743 seconds.
+Updated delays for iteration 36
+Updated scales for iteration 36
+              WARNING:       new error more than old.
+Error is: 0.3472
+delta error is: -0.0006
+Finished iteration 36
+Elapsed time is 0.856038 seconds.
+Updated delays for iteration 37
+Updated scales for iteration 37
+Error is: 0.3463
+delta error is: 0.0074
+Finished iteration 37
+Elapsed time is 0.851854 seconds.
+Updated delays for iteration 38
+Updated scales for iteration 38
+Error is: 0.3454
+delta error is: -0.0009
+Finished iteration 38
+Elapsed time is 0.843293 seconds.
+Updated delays for iteration 39
+Updated scales for iteration 39
+Error is: 0.3452
+delta error is: -0.0009
+Finished iteration 39
+Elapsed time is 0.846168 seconds.
+Updated delays for iteration 40
+Updated scales for iteration 40
+Error is: 0.3447
+delta error is: -0.0001
+Finished iteration 40
+Elapsed time is 0.851937 seconds.
+Updated delays for iteration 41
+Updated scales for iteration 41
+              WARNING:       new error more than old.
+Error is: 0.3455
+delta error is: -0.0005
+Finished iteration 41
+Elapsed time is 0.851092 seconds.
+Updated delays for iteration 42
+Updated scales for iteration 42
+Error is: 0.3451
+delta error is: 0.0007
+Finished iteration 42
+Elapsed time is 0.856211 seconds.
+Updated delays for iteration 43
+Updated scales for iteration 43
+Error is: 0.3448
+delta error is: -0.0003
+Finished iteration 43
+Elapsed time is 0.847922 seconds.
+Updated delays for iteration 44
+Updated scales for iteration 44
+              WARNING:       new error more than old.
+Error is: 0.3542
+delta error is: -0.0003
+Finished iteration 44
+Elapsed time is 0.852678 seconds.
+Updated delays for iteration 45
+Updated scales for iteration 45
+Error is: 0.3447
+delta error is: 0.0094
+Finished iteration 45
+Elapsed time is 0.854739 seconds.
+Updated delays for iteration 46
+Updated scales for iteration 46
+              WARNING:       new error more than old.
+Error is: 0.3536
+delta error is: -0.0096
+Finished iteration 46
+Elapsed time is 0.847651 seconds.
+Updated delays for iteration 47
+Updated scales for iteration 47
+Error is: 0.3530
+delta error is: 0.0090
+Finished iteration 47
+Elapsed time is 0.853684 seconds.
+Updated delays for iteration 48
+Updated scales for iteration 48
+Error is: 0.3524
+delta error is: -0.0007
+Finished iteration 48
+Elapsed time is 0.847512 seconds.
+Updated delays for iteration 49
+Updated scales for iteration 49
+Error is: 0.3522
+delta error is: -0.0005
+Finished iteration 49
+Elapsed time is 0.852136 seconds.
+Updated delays for iteration 50
+Updated scales for iteration 50
+Error is: 0.3519
+delta error is: -0.0002
+Finished iteration 50
+Elapsed time is 0.853120 seconds.
+Updated delays for iteration 51
+Updated scales for iteration 51
+Error is: 0.3517
+delta error is: -0.0003
+Finished iteration 51
+Elapsed time is 0.844009 seconds.
+Updated delays for iteration 52
+Updated scales for iteration 52
+Error is: 0.3515
+delta error is: -0.0002
+Finished iteration 52
+Elapsed time is 0.844996 seconds.
+Updated delays for iteration 53
+Updated scales for iteration 53
+              WARNING:       new error more than old.
+Error is: 0.3518
+delta error is: -0.0002
+Finished iteration 53
+Elapsed time is 0.848141 seconds.
+Updated delays for iteration 54
+Updated scales for iteration 54
+Error is: 0.3517
+delta error is: 0.0004
+Finished iteration 54
+Elapsed time is 0.854156 seconds.
+Updated delays for iteration 55
+Updated scales for iteration 55
+Error is: 0.3515
+delta error is: -0.0002
+Finished iteration 55
+Elapsed time is 0.853921 seconds.
+Updated delays for iteration 56
+Updated scales for iteration 56
+Error is: 0.3514
+delta error is: -0.0002
+Finished iteration 56
+Elapsed time is 0.851130 seconds.
+Updated delays for iteration 57
+Updated scales for iteration 57
+Error is: 0.3513
+delta error is: -0.0001
+Finished iteration 57
+Elapsed time is 0.850799 seconds.
+Updated delays for iteration 58
+Updated scales for iteration 58
+Error is: 0.3512
+delta error is: -0.0001
+Finished iteration 58
+Elapsed time is 0.846453 seconds.
+Updated delays for iteration 59
+Updated scales for iteration 59
+Error is: 0.3511
+delta error is: -0.0001
+Finished iteration 59
+Elapsed time is 0.844254 seconds.
+Updated delays for iteration 60
+Updated scales for iteration 60
+Error is: 0.3511
+delta error is: -0.0001
+Finished iteration 60
+Elapsed time is 0.854405 seconds.
+Updated delays for iteration 61
+Updated scales for iteration 61
+Error is: 0.3510
+delta error is: -0.0001
+Finished iteration 61
+Elapsed time is 0.849090 seconds.
+Updated delays for iteration 62
+Updated scales for iteration 62
+Error is: 0.3510
+delta error is: -0.0000
+Finished iteration 62
+Elapsed time is 0.851320 seconds.
+Updated delays for iteration 63
+Updated scales for iteration 63
+              WARNING:       new error more than old.
+Error is: 0.3510
+delta error is: -0.0001
+Finished iteration 63
+Elapsed time is 0.857672 seconds.
+Updated delays for iteration 64
+Updated scales for iteration 64
+Error is: 0.3509
+delta error is: 0.0000
+Finished iteration 64
+Elapsed time is 0.857179 seconds.
