@@ -1,6 +1,7 @@
 function eps = getdata(file_loc, str)
 % retrieves muscle episodes from file file_loc that match the type of
 % movement in string str
+plotting = 0;
 load(file_loc);
 %%
 Type = {Array.Trials.Type}.';
@@ -13,8 +14,8 @@ rawtime = rawtime{:};
 dt = mean(diff(rawtime));
 %Fs = dt.^(-1);
 %fc = 10;
-Wn = 7e-2;
-den = fir1(40,Wn, 'low');
+Wn = 5e-4;
+den = fir1(100,Wn, 'low');
 num = 1;
 %[den,num]=butter(5,Wn,'low');%butterworth Filter of 2 poles and Wn=0.1
 count = 1;
@@ -32,10 +33,12 @@ for s = 1:N_eps
                 rawdata = {Array.Trials(s).EMG(b).rawdata}.';
                 rawdata = rawdata{:};
                 rawdata = rawdata(rawtime > g(a) & rawtime < g(a+1));
-                                
-                % figure();
-                % plot(rawdata); hold on;
-                
+                        
+                if plotting
+                 figure();
+                 subplot(2,1,1);
+                 plot(rawdata); hold on;
+                end
                 % one way of filtering
                 sq_rawdata = 2.*rawdata.*rawdata;
                 y_sq = filter(den,num,sq_rawdata); %applying LPF
@@ -46,8 +49,13 @@ for s = 1:N_eps
 % 
 %                 % Another way of filtering
 %                 data{count}{b} = filter(den,num,rawdata);
+
                 data{count}{b} = data{count}{b}./max(data{count}{b}).*max(rawdata);
-                % plot(data{count}{b});
+                if plotting
+                plot(data{count}{b});
+                subplot(2,1,2);
+                plot(Array.Trials(s).EMG(b).Data);
+                end
             end % end cycle muscles
             durations(count) = length(y_sq);
             count = count+1;

@@ -58,7 +58,7 @@ derr_tol = 1e-4;
 % if error not changing by more than derr_tol, stop.
 % maximum number of allowed iterations
 maxiterations = 40000;
-miniterations = 20000;
+miniterations = 100;
 % Get first error estimate
     curr_rec_err = 0;
     for s = 1:N_eps
@@ -66,12 +66,12 @@ miniterations = 20000;
         reconstruction_error(eps{s}, out, c_sca(s,:), t_del(s,:));
     curr_rec_err = curr_rec_err+this_rec_err;
     end
-    save_err = sqrt(curr_rec_err); % the total reconstruction error at the current point
+    save_err = sqrt(curr_rec_err)./(N*M*T); % the total reconstruction error at the current point
 
 
 % initialize gradient norm, optimization vector, iteration counter, perturbation
 niter = 1; new_err = inf; derr = inf;
-
+alpha = 1;
 while (new_err>=err_tol && niter <= maxiterations...
         && abs(derr) > derr_tol || niter <= miniterations) 
     % continue iterating until done
@@ -106,7 +106,7 @@ while (new_err>=err_tol && niter <= maxiterations...
      
         for ii = 1:N
             this_theta = theta_mat(ii, t_del(s,ii), N, T, ep_lengths(s));
-            c_sca(s,ii) = c_sca(s,ii)...
+            c_sca(s,ii) = alpha * c_sca(s,ii)...
                 *trace( (M_s{s}') * W_mat * this_theta)...
                 /trace( (this_h') *(W_mat') * W_mat * this_theta);
         end
@@ -120,7 +120,7 @@ while (new_err>=err_tol && niter <= maxiterations...
     fprintf('Updated scales for iteration %d\n', niter);
     
     %% update the synergy elements by gradient descent, one value at a time
-    new_W_mat = W_mat .* ( (M_all * (H_all') ) ./ (W_mat * H_all * (H_all') ));
+    new_W_mat = alpha *  W_mat .* ( (M_all * (H_all') ) ./ (W_mat * H_all * (H_all') ));
     
     new_out = cell(N,1);
     for ii = 1:N
@@ -136,18 +136,20 @@ while (new_err>=err_tol && niter <= maxiterations...
         reconstruction_error(eps{s}, new_out, c_sca(s,:), t_del(s,:));
     curr_rec_err = curr_rec_err+this_rec_err;
     end
-    new_err = sqrt(curr_rec_err); % the total reconstruction error at the current point
+    new_err = sqrt(curr_rec_err)./(N*M*T); % the total reconstruction error at the current point
 
     
     if niter > 1
         if new_err < save_err(end) % Update if new synergies are better
             out = new_out;
             W_mat = new_W_mat;
+            alpha = 1;
         % update termination metrics
         else
             fprintf('              WARNING:       new error more than old.\n');
-            out = new_out;
-            W_mat = new_W_mat;
+            %out = new_out;
+            %W_mat = new_W_mat;
+            alpha = 1.1 * alpha;
         end
         
             derr = save_err(end) - save_err(end-1);
