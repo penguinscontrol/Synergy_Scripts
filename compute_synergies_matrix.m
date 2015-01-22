@@ -169,7 +169,7 @@ while (new_err>=err_tol && niter <= maxiterations...
         derr_tol = 0.001.*err_tol;
     end
     
-    fprintf('Finished iteration %d\n', niter);
+        fprintf('Finished iteration %d\n', niter);
     
         % update error log
         save_err = [save_err new_err];
