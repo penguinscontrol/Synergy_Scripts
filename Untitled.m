@@ -1,5 +1,5 @@
 close all;
-n = 79;
+n = 67;
 EMG = Array.Trials(n).EMG(1);
 plot(EMG.rawtime, EMG.rawdata);
 hold on;

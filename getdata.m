@@ -1,7 +1,7 @@
 function eps = getdata(file_loc, str)
 % retrieves muscle episodes from file file_loc that match the type of
 % movement in string str
-plotting = 0;
+plotting = 1;
 load(file_loc);
 %%
 Type = {Array.Trials.Type}.';

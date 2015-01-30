@@ -2,9 +2,9 @@ clear;clc;close all;
 
 %% Generate synergies
 
-N = 2;
-M = 3;
-T = 20;
+N = 3;
+M = 8;
+T = 100;
 x = 0:T-1; % basis for the x axis
 test_synergies = gaussian_synergies(N,M,T);
 
@@ -12,7 +12,7 @@ h = plot_synergy(test_synergies);
 title('CG Synergies');
 %% Generate test data
 
-[test_data, c_sca, t_del] = syn2act_rand(test_synergies, 1.2*T, 50);
+[test_data, c_sca, t_del] = syn2act_rand(test_synergies, 1.2*T, 250);
 
 ep_to_plot = 1; % episode to be plotted
 
