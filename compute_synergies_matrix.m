@@ -58,7 +58,7 @@ derr_tol = 1e-4;
 % if error not changing by more than derr_tol, stop.
 % maximum number of allowed iterations
 maxiterations = 40000;
-miniterations = 10;
+miniterations = 60;
 % Get first error estimate
     curr_rec_err = 0;
     for s = 1:N_eps
