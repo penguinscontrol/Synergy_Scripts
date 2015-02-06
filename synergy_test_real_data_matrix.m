@@ -1,10 +1,10 @@
 clear;clc;close all;
-load('real_data_5.mat');
+load('Q21_all.mat');
 M = length(all{1});
-N_comp_syn = 3; % Look for N_comp_syn synergies
+N_comp_syn = 2; % Look for N_comp_syn synergies
 ep_to_plot = 5;
-T = 100;
-to_proc = undersample_episodes(all, 10);
+T = 250;
+to_proc = undersample_episodes(all, 5);
 [comp_syn, comp_c_sca, comp_t_del, save_gnorm]...
     = compute_synergies_matrix(to_proc, N_comp_syn, T, 1000, 500);
 

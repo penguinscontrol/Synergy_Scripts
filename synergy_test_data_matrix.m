@@ -14,6 +14,7 @@ title('CG Synergies');
 
 [test_data, c_sca, t_del] = syn2act_rand(test_synergies, 1.2*T, 250);
 
+
 ep_to_plot = 1; % episode to be plotted
 
 [h2, real_ep] = plot_episode(ep_to_plot, c_sca, t_del, test_synergies, test_data);
